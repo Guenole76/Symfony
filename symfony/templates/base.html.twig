@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PostController!{% endblock %}
+
+{% block body %}
+<ul>
+        {% for post in mesPosts %}
+            <li>{{ post.title }}</li>
+        {% endfor %}
+</ul>
+
+{% endblock %}
